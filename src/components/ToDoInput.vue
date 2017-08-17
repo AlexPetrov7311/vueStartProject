@@ -18,7 +18,7 @@ export default {
     addIssue() {
       console.log('addIssues');
       console.log(this.$store);
-
+      // this.$store.commit('ADD_ISSUES', { title: this.text }); equivalent next line
       this.$store.dispatch('addIssues', { title: this.text });
     },
   },
