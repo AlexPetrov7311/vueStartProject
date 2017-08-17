@@ -17,15 +17,17 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <todo-input></todo-input>
      <list></list>
   </div>
 </template>
 
 <script>
 import list from './List';
+import todoInput from './ToDoInput';
 
 export default {
-  components: { list },
+  components: { list, todoInput },
   name: 'hello',
   data() {
     return {

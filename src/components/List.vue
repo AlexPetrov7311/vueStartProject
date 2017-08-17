@@ -1,7 +1,7 @@
 <template>
   <div class="list">
     {{ todolist }}
-    <list-item v-for="(item, key) in items" :item="item" :key="key"></list-item>
+    <list-item v-for="(item, key) in items" :issue="item" :key="key"></list-item>
   </div>
 </template>
 
@@ -14,11 +14,12 @@ export default {
   data() {
     return {
       todolist: 'To-do list',
-      items: [
-        { title: 'Vue' },
-        { titile: 'Unit Testing' },
-      ],
     };
+  },
+  computed: {
+    items() {
+      return this.$store.getters.getIssues;
+    },
   },
 };
 </script>
