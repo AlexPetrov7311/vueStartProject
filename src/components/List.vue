@@ -1,6 +1,6 @@
 <template>
-  <div class="list">
-    {{ todolist }}
+  <div class="container control column is-half panel">
+
     <list-item v-for="(item, key) in items" :issue="item" :key="key"></list-item>
   </div>
 </template>

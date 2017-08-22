@@ -1,7 +1,7 @@
 <template>
-  <div @click="changeItem()">
+  <a class="panel-block"  @click="changeItem()">
     {{ issue.title }}
-  </div>
+  </a>
 </template>
 
 <script>
